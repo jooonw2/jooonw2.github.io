@@ -6,17 +6,16 @@ Portfolio personal de ciberseguridad para GitHub Pages.
 
 - `index.html` — página principal.
 - `sobre.html` — subpágina "Sobre esta página".
+- `curriculum.html` — acceso al perfil de LinkedIn.
+- `proyectos.html` — acceso a los repositorios de GitHub.
+- `alojamiento.html` — explicación de GitHub Pages y del formato estático del sitio.
 - `style.css` — estilos completos y responsive.
-- `script.js` — animaciones ligeras.
-- `assets/cybersecurity-background.png` — nueva imagen de fondo sin texto.
+- `script.js` — animaciones de entrada.
+- `assets/cybersecurity-background.png` — imagen de fondo del sitio.
 
-## Personalizar LinkedIn
+## LinkedIn
 
-En `index.html`, sustituye:
-
-`https://www.linkedin.com/`
-
-por tu URL real de LinkedIn.
+El enlace al perfil de LinkedIn se encuentra en `index.html` y `curriculum.html`.
 
 ## GitHub
 
