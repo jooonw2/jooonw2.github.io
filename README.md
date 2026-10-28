@@ -9,6 +9,7 @@ Portfolio personal de ciberseguridad para GitHub Pages.
 - `curriculum.html` — acceso al perfil de LinkedIn.
 - `proyectos.html` — acceso a los repositorios de GitHub.
 - `alojamiento.html` — explicación de GitHub Pages y del formato estático del sitio.
+- `prompts.html` — colección de prompts de IA, organizados en bloques desplegables.
 - `style.css` — estilos completos y responsive.
 - `script.js` — animaciones de entrada.
 - `assets/cybersecurity-background.png` — imagen de fondo del sitio.

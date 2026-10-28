@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prompts de inteligencia artificial usados por Jon Andrés.">
+  <meta name="theme-color" content="#02080c">
+  <title>Prompts de IA | Jon Andrés</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page">
+  <main class="about-wrapper">
+    <section class="about-header">
+      <a class="back-link" href="index.html">← VOLVER</a>
+      <p class="eyebrow">RECURSOS Y HERRAMIENTAS</p>
+      <h1>Prompts <span>de IA</span></h1>
+      <p class="about-intro">
+        Una colección de prompts que utilizo con herramientas de inteligencia artificial.
+        Abre cada bloque para leerlo y copiarlo completo.
+      </p>
+    </section>
+
+    <section class="prompt-library" aria-label="Colección de prompts">
+      <details class="prompt-entry">
+        <summary>
+          <div>
+            <span class="prompt-category">ANDROID TV · ADB</span>
+            <h2>Optimizar Android TV usando ADB</h2>
+            <p class="prompt-preview">Revisión cuidadosa del dispositivo, con cambios controlados y opciones para revertirlos.</p>
+          </div>
+        </summary>
+        <div class="prompt-content">
+          <div class="prompt-content-head">
+            <p>PROMPT COMPLETO</p>
+            <button class="copy-prompt" type="button" data-copy-target="prompt-android">COPIAR PROMPT</button>
+          </div>
+          <pre class="prompt-text" id="prompt-android">Quiero que optimices mi Android TV usando ADB. Guíame y ejecuta los cambios que permita tu entorno.
+
+OBJETIVOS
+- Mejorar la respuesta y reducir la carga de la pantalla principal.
+- Quitar anuncios, recomendaciones y rastreo que se puedan desactivar con seguridad.
+- Desinstalar o desactivar aplicaciones que no uso.
+- Conservar las cuentas, sesiones y datos de Netflix, YouTube, Prime Video, Movistar+ y cualquier otra app que te indique.
+- No cambies el DNS, no borres datos de aplicaciones y no hagas restablecimientos de fábrica.
+
+CONEXIÓN
+1. Si ADB no está instalado, instala las Android Platform Tools desde una fuente oficial y dime dónde quedó el ejecutable.
+2. Pídeme la IP del televisor si no te la he dado. La conexión suele usar el puerto 5555, pero comprueba el método y el estado del dispositivo.
+3. Conecta por ADB y verifica que el televisor autorizó la conexión. Si aparece una solicitud de autorización en la TV, espera a que yo la acepte.
+4. Antes de modificar nada, identifica el fabricante, modelo, versión de Android y usuario activo. Guarda una lista de los paquetes instalados y el estado inicial de los paquetes que planeas cambiar.
+5. Si no puedes acceder al dispositivo, explícame qué debo habilitar en las opciones de desarrollador y qué mensaje debería aceptar en la TV. No afirmes que estás conectado hasta verificarlo.
+
+REVISIÓN Y CAMBIOS
+- Primero inspecciona el launcher, las recomendaciones, los canales de contenido y las aplicaciones instaladas. Preséntame una lista breve de los cambios propuestos y separa:
+  A) ajustes reversibles;
+  B) desinstalaciones solo para el usuario actual;
+  C) acciones que podrían afectar funciones del sistema.
+- No elimines ni desactives una app basándote solo en su nombre. Comprueba el paquete y su función en este modelo.
+- Conserva siempre las aplicaciones que yo diga que uso y sus cuentas/datos.
+- Desactiva recomendaciones, vistas previas de vídeo/audio y canales promocionales desde los ajustes del launcher cuando sea posible.
+- Desactiva componentes de publicidad o analítica solo si confirmas qué paquete es y que es seguro para este modelo.
+- Para aplicaciones prescindibles, prefiere `pm uninstall --user 0` o deshabilitarlas para el usuario actual; no borres el APK del sistema ni los datos compartidos.
+- No borres datos ni cachés de apps sin preguntarme antes. No desinstales componentes de accesibilidad, teclado, entrada, red, actualizaciones, configuración, launcher o servicios compartidos sin explicar el impacto y obtener mi aprobación.
+- Si propusiera eliminar una app que podría contener sesiones o datos importantes, detente y consúltame.
+- Puedes sugerir reducir las escalas de animación, pero registra los valores originales para poder restaurarlos.
+- No hagas cambios de DNS, VPN, proxy, firewall o bloqueo de red.
+
+VERIFICACIÓN Y ENTREGA
+- Aplica únicamente los cambios que yo autorice.
+- Verifica cada comando y su resultado; después reinicia solo si hace falta y comprueba que el televisor arranca, que el launcher funciona y que mis aplicaciones principales siguen instaladas.
+- Si un cambio causa problemas, revierte ese cambio cuando sea posible.
+- Al terminar, dame un resumen con: paquetes desactivados o desinstalados para el usuario, ajustes modificados, estado de conexión, comprobaciones realizadas y limitaciones que sigan pendientes.
+- Distingue claramente entre “desinstalado para el usuario” y “eliminado del sistema”; no digas que algo se borró por completo si solo se quitó para el usuario actual.
+- No ejecutes tareas periódicas ni automatizaciones. Haz los cambios durante esta sesión.</pre>
+        </div>
+      </details>
+
+      <details class="prompt-entry">
+        <summary>
+          <div>
+            <span class="prompt-category">DISEÑO WEB · PORTFOLIO</span>
+            <h2>Crear una web personal según mi profesión</h2>
+            <p class="prompt-preview">Diseña una web con contenido, imágenes y navegación coherentes con el trabajo y la personalidad de quien la presenta.</p>
+          </div>
+        </summary>
+        <div class="prompt-content">
+          <div class="prompt-content-head">
+            <p>PROMPT COMPLETO</p>
+            <button class="copy-prompt" type="button" data-copy-target="prompt-web-personal">COPIAR PROMPT</button>
+          </div>
+          <pre class="prompt-text" id="prompt-web-personal">Quiero que crees una web personal o portfolio para mí, con un diseño cuidado y relacionado con mi profesión. Trabaja en el proyecto que tengas abierto y adapta la web a mis datos, objetivos y preferencias.
+
+DATOS PARA PERSONALIZAR
+- Nombre o nombre profesional: [ESCRIBE AQUÍ]
+- Profesión o sector: [ESCRIBE AQUÍ]
+- A quién quiero dirigirme: [ESCRIBE AQUÍ]
+- Qué quiero conseguir con la web: [ESCRIBE AQUÍ]
+- Enlaces que quiero mostrar: [LINKEDIN, GITHUB, OTROS]
+- Información que sí quiero publicar: [ESCRIBE AQUÍ]
+- Preferencias visuales o ejemplos: [OPCIONAL]
+
+Si falta algún dato importante, pregúntame de forma breve antes de inventarlo. Puedes resolver por tu cuenta las decisiones pequeñas de diseño y explicarme las suposiciones relevantes.
+
+DISEÑO Y ESTILO
+- Antes de diseñar, identifica qué elementos visuales, colores, tipografías e imágenes encajan con mi profesión, mi público y el objetivo de la web.
+- Haz que la portada, el fondo, los iconos, las ilustraciones, las tarjetas y los botones tengan relación con mi ámbito profesional. Evita las imágenes genéricas que podrían pertenecer a cualquier web.
+- Usa primero los recursos que ya existan en el proyecto. Si hacen falta imágenes nuevas y tu entorno permite crearlas, prepara recursos adecuados para el sector y guárdalos en la carpeta de recursos del proyecto.
+- No uses una foto de una persona como si fuera yo, ni inventes logros, estudios, experiencia, clientes o proyectos.
+- Mantén una apariencia clara, profesional y coherente en todas las páginas. Cuida el contraste, la legibilidad y el espacio en pantalla.
+
+ESTRUCTURA Y CONTENIDO
+- Crea una portada que explique en pocos segundos quién soy, a qué me dedico y cómo acceder a la información relevante.
+- Elige el menú y las páginas según el contenido real que te proporcione. Usa una sola página si hay poco contenido; crea subpáginas si los textos son extensos o pertenecen a temas distintos.
+- Cada opción del menú debe llevar a una sección o página útil y funcionar correctamente. No añadas apartados vacíos ni contenido de relleno.
+- Escribe en español claro, salvo que te pida otro idioma. Mantén los textos breves y centrados en la persona que visita la web.
+- Incluye botones de contacto o perfiles solo para los enlaces que te haya dado y que quiera publicar. No inventes direcciones ni datos de contacto.
+
+PRIVACIDAD Y TECNOLOGÍA
+- La web será pública: muestra únicamente los datos que te indique expresamente para publicar. No añadas dirección, teléfono, cuentas, sesiones ni información personal privada.
+- Revisa los archivos existentes antes de editarlos y conserva el contenido útil. No borres ni sustituyas trabajo previo sin explicármelo.
+- Adapta la solución al proyecto. Si es una web sencilla, prefiere HTML, CSS y JavaScript sin dependencias innecesarias y déjala compatible con GitHub Pages.
+- Asegúrate de que se vea bien en móvil y escritorio, que los enlaces funcionen, que las imágenes tengan texto alternativo cuando corresponda y que se pueda navegar con teclado.
+- Deja la web lista para previsualizar localmente. No la publiques, no subas cambios a GitHub ni hagas un commit sin que te lo pida.
+
+ENTREGA
+- Implementa la web en los archivos del proyecto y resume qué páginas y elementos has creado o modificado.
+- Indícame cómo abrir una vista previa local y qué datos o enlaces siguen pendientes de mi parte.
+- Si alguna función no puede comprobarse en tu entorno, dilo claramente en el resumen.</pre>
+        </div>
+      </details>
+    </section>
+
+    <section class="credits">
+      <p>Los prompts se muestran completos al desplegarlos y se pueden copiar para reutilizarlos.</p>
+      <p class="signature">JON ANDRÉS <span>·</span> CYBERSECURITY</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

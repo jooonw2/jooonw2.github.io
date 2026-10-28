@@ -317,6 +317,118 @@ code { color: var(--cyan); }
   line-height: 1.65;
 }
 
+.prompt-library {
+  display: grid;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.prompt-entry {
+  overflow: hidden;
+  border: 1px solid rgba(24,217,255,.23);
+  border-radius: 9px;
+  background: linear-gradient(145deg, rgba(5,20,27,.88), rgba(2,10,14,.72));
+  transition: border-color .2s ease;
+}
+
+.prompt-entry:hover,
+.prompt-entry[open] {
+  border-color: rgba(24,228,161,.5);
+}
+
+.prompt-entry summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  padding: 23px 25px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.prompt-entry summary::-webkit-details-marker { display: none; }
+
+.prompt-entry summary::after {
+  content: "+";
+  color: var(--cyan);
+  font: 400 1.6rem "Space Mono", monospace;
+}
+
+.prompt-entry[open] summary::after { content: "−"; }
+
+.prompt-category {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--green);
+  font: 700 .65rem "Space Mono", monospace;
+  letter-spacing: .14em;
+}
+
+.prompt-entry h2 {
+  margin: 0;
+  color: #eef8fa;
+  font-size: 1.08rem;
+}
+
+.prompt-preview {
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: .84rem;
+  line-height: 1.6;
+}
+
+.prompt-content {
+  padding: 0 25px 25px;
+}
+
+.prompt-content-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.prompt-content-head p {
+  margin: 0;
+  color: #8fa4ad;
+  font: 700 .68rem "Space Mono", monospace;
+  letter-spacing: .1em;
+}
+
+.copy-prompt {
+  min-height: 42px;
+  padding: 0 15px;
+  border: 1px solid rgba(24,217,255,.4);
+  border-radius: 5px;
+  background: rgba(24,217,255,.08);
+  color: #e9fbff;
+  cursor: pointer;
+  font: 700 .66rem "Space Mono", monospace;
+  letter-spacing: .07em;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.copy-prompt:hover,
+.copy-prompt.is-copied {
+  border-color: var(--green);
+  background: rgba(24,228,161,.12);
+}
+
+.prompt-text {
+  max-height: 68vh;
+  overflow: auto;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 6px;
+  background: rgba(0,0,0,.24);
+  color: #c6d4da;
+  font: 400 .82rem/1.75 "Inter", sans-serif;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
 .signature {
   margin-top: 26px;
   color: #b8cbd3;
@@ -400,6 +512,10 @@ code { color: var(--cyan); }
   .cards {
     grid-template-columns: 1fr;
   }
+
+  .prompt-entry summary { padding: 20px; }
+  .prompt-content { padding: 0 20px 20px; }
+  .prompt-content-head { align-items: flex-start; flex-direction: column; }
 
   .info-card {
     min-height: 150px;
